@@ -1,0 +1,271 @@
+/*
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+.bg-image {
+    background-image: url(https://i.postimg.cc/5NYpnw4H/pexels-dynamic-wang-7582107.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.logo {
+    width: 80px;
+    height: 100px;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 5px;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: lighter;
+    font-size: 130px;
+    padding-right: 50px;
+}
+.half {
+    color: rgb(192, 188, 188);
+}
+.half2 {
+    color: rgba(0, 0, 0, 0.89);
+}
+.slogan {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 270px;
+    padding-left: 11px;
+}
+.nav-item {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 1.9rem;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    padding: 20px;
+}
+.nav-item:hover {
+    text-decoration: underline;
+}
+
+
+
+.welcome {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.89) , rgb(192, 188, 188));
+}
+.welcome1 {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 4rem;
+    padding-top: 120px;
+}
+.WelcomeMessage {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 2rem;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+
+
+footer {
+    background-color:  rgb(192, 188, 188);
+}
+
+
+
+.ArtGallery {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 4rem;
+}
+
+  .card {
+    overflow: hidden;
+    width: 300px;
+    padding: 0;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+
+  img {
+    object-fit: cover;
+    aspect-ratio: 3/4;
+    filter: grayscale(100%);
+
+
+  }
+  img:hover {
+    transform: scale(1.1);
+    transition: transform .7s;
+}
+
+.price {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: large;
+    font-weight: 500;
+}
+h5 {
+    font-family: 'Frank Ruhl Libre', serif; 
+    font-size: x-large;
+    font-weight: 900;
+}
+
+.PurchaseButton {
+    font-family: 'Frank Ruhl Libre', serif;
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+.PurchaseButton:hover {
+    color: rgb(153, 153, 153);
+}
+
+.dropdown {
+    display: inline;
+}
+
+
+
+.adminpage {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.89) , rgb(192, 188, 188));
+}
+
+.AdminHeading {
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: lighter;
+    font-size: 80px;
+    padding-right: 50px;
+}
+
+table {
+    margin-top: 50px;
+}
+
+th {
+    color: white;
+    border: solid;
+    padding: 15px;
+}
+
+
+button {
+    border: none;
+    background: none;
+    padding: 20px;
+}
+
+
+.fa-solid:hover {
+    color: white;
+}
+
+
+.form-control {
+    border: 2px solid black;
+}
+.display-3 {
+    padding-top: 20px;
+}
+input[type="submit"]:hover{
+    cursor:pointer;
+    background: black;
+    color:white;
+}
+
+#screen { 
+    width: 25px;
+    background-color: white;
+}
+
+
+@media only screen and (max-width: 1280px) {
+    h1 {
+        text-align: center;
+        padding-top: 20px;
+        font-family: 'Cormorant Garamond', serif;
+        font-weight: lighter;
+        font-size: 40px;
+        padding-right: 0px;
+        font-weight: bolder;
+    }
+
+
+    .half {
+        color: black;
+        font-weight: bolder;
+    }
+    .half2 {
+        color: rgba(0, 0, 0, 0.89);
+        font-weight: bolder;
+    } 
+
+    .logo {
+       width: 50px; 
+       height: 50px;
+    }
+
+    .slogan {
+        
+        
+        font-size: 28px;
+        text-align: center;
+        padding-top: 350px;
+        padding-left: 11px;
+    }
+
+    .welcome1 {
+        font-size: 2rem;
+    }
+    .WelcomeMessage {
+        font-size: 1rem;
+        padding: 30px;
+    }
+
+    .ArtGallery {
+        font-family: 'Frank Ruhl Libre', serif;
+        font-size: 2rem;
+    }
+
+    .col-2 {
+        font-size: 10px;
+        padding: 4px;
+    }
+
+    button {
+        padding: 5px;
+    }
+
+    .AdminHeading {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+
+    .modalButton {
+        width: 90px;
+        height: 40px;
+        font-size: x-small;
+        height: 28px;
+        width: 90px;
+    }
+
+
+
+    
+    footer  {
+        font-size: small;
+        line-height: 36px;
+        
+    }
+
+    }
+*/

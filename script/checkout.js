@@ -8,7 +8,8 @@ let checkOutList = JSON.parse(localStorage.getItem('checkoutPage'));
 function checkout() {
     checkOutList.forEach((item) => {
         document.querySelector('.Checkout').innerHTML +=
-        `<tr>
+        `
+        <tr>
         <th class="col-3"><span class="Type text-black">${item.name}</span></th>
         <th class="col-3"><span class="Type text-black"><input type="text" id="screen"</span></th>
         <th class="col-3"><span class="Type text-black">${item.price}</span></th>
@@ -17,7 +18,7 @@ function checkout() {
       })
 
 }
-checkoutButton();
+checkout();
 
 // Using the same delete function we used in our 'admin.js'
 

@@ -18,14 +18,78 @@
 </head>
 <body>
     <!-- NavBar -->
-
+    <section class="adminpage">
+        <nav class="navbar navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="https://i.postimg.cc/Hng6VLg8/header.jpg" class="logo"
+                        alt="Bootstrap" width="100" height="80"></a>
+                <button class="navbar-toggler bg-black" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../html/checkout.html">Checkout</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../html/admin.html">Admin</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../html/contact.html">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
 
     <!-- Contact section -->
-
-
+    <section class="container-fluid">
+        <h3 id="contact" class="AdminHeading">Contact</h3>
+        <form action="https://formspree.io/f/xdojzbnr" method="post">
+          <div class="row my-3 px-5">
+            <div class="col-sm-12 col-lg-6 mb-4">
+              <input type="text" class="form-control form-control-lg" placeholder="First name"
+              aria-label="First name" name="firstName" required>
+            </div>
+            <div class="col-sm-12 col-lg-6 mb-4">
+              <input type="text" class="form-control form-control-lg" placeholder="Last name"
+              aria-label="Last name" name="lastName" required>
+            </div>
+            <div class="col-sm-12 col-lg-12">
+              <input type="email" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="Email Address" aria-label="Email Address" name="EmailAddress" required>
+            </div>
+          </div>
+          <div class="row px-5">
+            <div class="col-sm-12 col-lg mb-5">
+              <textarea type="text" class="form-control form-control-lg" id="formMessage" name="message" required placeholder="Message"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col mb-5">
+              <input type="submit" class="btn btn-dark btn-block">
+            </div>
+          </div>
+        </form>
+      </section>
 
     <!-- Footer -->
-    
+    <footer class="footer container-fluid fixed-bottom">
+        <div class="text-center text-black p-3 fs-6">
+          <p>© Copyright 2022. Made by Javier Goodall</p>
+        </div>
+    </footer>
 
 
     <!-- External JavaScript File -->

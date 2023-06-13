@@ -9,7 +9,7 @@
     
     <!-- CSS -->
     
-    <link rel="stylesheet" href="./style/styles.css">
+    <link rel="stylesheet" href="../style/styles.css">
 
     <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
@@ -18,21 +18,73 @@
 </head>
 <body>
     <!-- NavBar -->
-
+    <section class="adminpage">
+        <nav class="navbar navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="https://i.postimg.cc/Hng6VLg8/header.jpg" class="logo" alt="Bootstrap"></a>
+                <button class="navbar-toggler bg-black" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../html/checkout.html">Checkout</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../html/admin.html">Admin</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../html/contact.html">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
 
     <!-- header section -->
-
+    
+    <header>
+        <h1 class="Adminheading">
+            Checkout
+        </h1>
+    </header>
 
     <!-- table section -->
 
-    
-    
+    <div>
+        <table class="container">
+            <tr class="row-12">
+                <th class="col-3"><span class="Type text-black">Name</span></th>
+                <th class="col-3"><span class="Type text-black">Quantity</span></th>
+                <th class="col-3"><span class="Type text-black">Price</span></th>
+            </tr>
+
     <!-- Dynamically adding our content -->
 
+            <tbody class="Checkout">
+
+            </tbody>
+        </table>
 
     <!-- Footer -->
-    
+        <footer class="footer container-fluid">
+        <div class="text-center text-black p-3 fs-6">
+          <p>© Copyright 2022. Made by Thabang Kganana</p>
+        </div>
+      </footer>
 
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/1d9a11880c.js" crossorigin="anonymous"></script>
 
     <!-- External JavaScript File -->
     

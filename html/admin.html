@@ -1,55 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">    
-    
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
     <!-- CSS -->
-    
-    <link rel="stylesheet" href="./style/styles.css">
+
+    <link rel="stylesheet" href="../style/styles.css">
 
     <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
 
     <title>Property Website</title>
 </head>
+
 <body>
     <!-- NavBar -->
-    
+
     <section class="adminpage">
         <nav class="navbar navbar-dark">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img src=https://i.postimg.cc/CKm46pDz/sculpture-1.png class="logo"  alt="Bootstrap" width="100" height="80"></a>
-              <button class="navbar-toggler bg-black" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-                <div class="offcanvas-header">
-                  <!-- <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5> -->
-                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <a class="navbar-brand" href="#"><img src="https://i.postimg.cc/Hng6VLg8/header.jpg" class="logo"
+                        alt="Bootstrap" width="100" height="80"></a>
+                <button class="navbar-toggler bg-black" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <!-- <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5> -->
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../html/checkout.html">Checkout</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../html/admin.html">Admin</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../html/contact.html">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="../html/checkout.html">Checkout</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="../html/admin.html">Admin</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="../html/form.html">Contact Us</a>
-                  </li>
-                  </ul>
-                </div>
-              </div>
-            </div> 
-          </nav>
+            </div>
+        </nav>
     </section>
 
     <!-- header section -->
@@ -65,55 +72,60 @@
 
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-2" id="exampleModalLabel">Add Products</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-2" id="exampleModalLabel">Add Products</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text bg-dark text-white" id="inputGroup-sizing-default">Id</span>
+                        <input type="text" class="form-control" id="id" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-default">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text bg-dark text-white" id="inputGroup-sizing-default">Type</span>
+                        <input type="text" class="form-control" id="type" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-default">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text bg-dark text-white" id="inputGroup-sizing-default">Name</span>
+                        <input type="text" class="form-control" id="name" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-default">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text bg-dark text-white" id="inputGroup-sizing-default">Price</span>
+                        <input type="text" class="form-control" id="price" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-default">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text bg-dark text-white" id="inputGroup-sizing-default">Image</span>
+                        <input type="text" class="form-control" id="imageURL" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-default">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark Add">Add</button>
+                </div>
             </div>
-            <div class="modal-body">
-              <div class="input-group mb-3">
-                <span class="input-group-text bg-dark text-white" id="inputGroup-sizing-default">Id</span>
-                <input type="text" class="form-control" id="id" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-              </div>
-                <div class="input-group mb-3">
-                    <span class="input-group-text bg-dark text-white" id="inputGroup-sizing-default">Type</span>
-                    <input type="text" class="form-control" id="type" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-                  </div>
-                  <div class="input-group mb-3">
-                    <span class="input-group-text bg-dark text-white" id="inputGroup-sizing-default">Name</span>
-                    <input type="text" class="form-control" id="name" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-                  </div>
-                  <div class="input-group mb-3">
-                    <span class="input-group-text bg-dark text-white" id="inputGroup-sizing-default">Price</span>
-                    <input type="text" class="form-control" id="price" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-                  </div>
-                  <div class="input-group mb-3">
-                    <span class="input-group-text bg-dark text-white" id="inputGroup-sizing-default">Image</span>
-                    <input type="text" class="form-control" id="imageURL" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-                  </div> 
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-dark Add">Add</button>
-            </div>
-          </div>
         </div>
-      </div>
+    </div>
 
     <!-- Table section -->
     <div class="table1">
         <table class="container mb-5">
             <tr class="row-12">
-              <th class="col-2"><span class="Type text-black">Number</span></th>
+                <th class="col-2"><span class="Type text-black">Number</span></th>
                 <th class="col-2"><span class="Type text-black">Type</span></th>
                 <th class="col-2"><span class="Type text-black">Name</span></th>
                 <th class="col-2"><span class="Type text-black">Price</span></th>
                 <th class="col-2"><span class="Type text-black">Delete</span></th>
                 <th class="col-2"><span class="Type text-black">Edit</span></th>
             </tr>
-            
+
             <!-- Dynamically adding our content in our 'tbody' -->
-            
+
             <tbody class="products">
 
             </tbody>
@@ -124,17 +136,20 @@
     <!-- Footer -->
     <footer class="footer container-fluid">
         <div class="text-center text-black p-3 fs-6">
-          <p>© Copyright 2022. Made by Thabang Kganana</p>
+            <p>© Copyright 2022. Made by Thabang Kganana</p>
         </div>
-     </footer>
+    </footer>
 
     <!-- External JavaScript File -->
-    
+
     <script src="../html/admin.html"></script>
     <script src="https://kit.fontawesome.com/1d9a11880c.js" crossorigin="anonymous"></script>
 
     <!-- Bootstrap JavaScript -->
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

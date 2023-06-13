@@ -1,4 +1,4 @@
-/*
+
 
 *,
 *::after,
@@ -9,7 +9,7 @@
     text-align: center;
 }
 .bg-image {
-    background-image: url(https://i.postimg.cc/5NYpnw4H/pexels-dynamic-wang-7582107.jpg);
+    /* background-image: url(https://i.postimg.cc/5NYpnw4H/pexels-dynamic-wang-7582107.jpg); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -268,4 +268,3 @@ input[type="submit"]:hover{
     }
 
     }
-*/

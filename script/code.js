@@ -79,6 +79,10 @@ function displayProducts(products) {
 // Function to add a product to checkout
 
 function addToCheckout(productId) {
+  
+  // Get from localStorage
+  var products = JSON.parse(localStorage.getItem('products'));
+
   var product = products.find((p) => p.id === productId);
   if (product) {
     var checkoutList = JSON.parse(localStorage.getItem('checkoutPage')) || [];

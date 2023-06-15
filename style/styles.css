@@ -6,40 +6,13 @@
     box-sizing: border-box;
     text-align: center;
 }
-.bg-image {
-    /* background-image: url(https://i.postimg.cc/5NYpnw4H/pexels-dynamic-wang-7582107.jpg); */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* height: 100vh; */
-}
 
 .logo {
     width: 80px;
     height: 100px;
 }
 
-h1 {
-    text-align: center;
-    padding-top: 5px;
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: lighter;
-    font-size: 130px;
-    padding-right: 50px;
-}
-.half {
-    color: rgb(192, 188, 188);
-}
-.half2 {
-    color: rgba(0, 0, 0, 0.89);
-}
-.slogan {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 50px;
-    text-align: center;
-    padding-top: 270px;
-    padding-left: 11px;
-}
+
 .nav-item {
     font-family: 'Frank Ruhl Libre', serif;
     font-size: 1.9rem;
@@ -53,34 +26,10 @@ h1 {
 
 
 
-.welcome {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.89) , rgb(192, 188, 188));
-}
-.welcome1 {
-    font-family: 'Frank Ruhl Libre', serif;
-    font-size: 4rem;
-    padding-top: 120px;
-}
-.WelcomeMessage {
-    font-family: 'Frank Ruhl Libre', serif;
-    font-size: 2rem;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 30px;
-    padding-bottom: 100px;
-}
-
-
 footer {
     background-color:  rgb(192, 188, 188);
 }
 
-
-
-.ArtGallery {
-    font-family: 'Frank Ruhl Libre', serif;
-    font-size: 4rem;
-}
 
   .card {
     overflow: hidden;
@@ -113,12 +62,6 @@ h5 {
     font-weight: 900;
 }
 
-.PurchaseButton {
-    font-family: 'Frank Ruhl Libre', serif;
-    background-color: black;
-    color: white;
-    padding: 5px;
-}
 
 .PurchaseButton:hover {
     color: rgb(153, 153, 153);
@@ -198,28 +141,6 @@ input[type="submit"]:hover{
     .logo {
        width: 50px; 
        height: 50px;
-    }
-
-    .slogan {
-        
-        
-        font-size: 28px;
-        text-align: center;
-        padding-top: 350px;
-        padding-left: 11px;
-    }
-
-    .welcome1 {
-        font-size: 2rem;
-    }
-    .WelcomeMessage {
-        font-size: 1rem;
-        padding: 30px;
-    }
-
-    .ArtGallery {
-        font-family: 'Frank Ruhl Libre', serif;
-        font-size: 2rem;
     }
 
     .col-2 {

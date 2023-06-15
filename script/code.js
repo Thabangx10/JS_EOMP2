@@ -65,7 +65,7 @@ function displayProducts(products) {
             <h5 class="card-title">${product.title}</h5>
             <p class="card-text">Price: $${product.price}</p>
             <p class="card-text">Category: ${product.category}</p>
-            <button class="btn btn-primary" onclick="addToCheckout(${product.id})">Add to Checkout</button>
+            <button class="btn btn-primary custom-btn" onclick="addToCheckout(${product.id})">Add to Checkout</button>
           </div>
         </div>
       `;
@@ -106,95 +106,6 @@ function addToCheckout(productId) {
 
 
 // Implement logic for our buttons using functions whilst also creating a checkout button function
-
-// Create a function to calculate the total cost
-function calculateTotalCost() {
-  let checkoutList = JSON.parse(localStorage.getItem('checkoutPage')) || [];
-  let totalCost = 0;
-
-  checkoutList.forEach((item) => {
-    totalCost += item.price * item.quantity;
-  });
-
-  return totalCost;
-}
-
-// Create a function to calculate the total quantity
-function calculateTotalQuantity() {
-  let checkoutList = JSON.parse(localStorage.getItem('checkoutPage')) || [];
-  let totalQuantity = 0;
-
-  checkoutList.forEach((item) => {
-    totalQuantity += item.quantity;
-  });
-
-  return totalQuantity;
-}
-
-// Create a function to display the checkout items and total
-function displayCheckoutItems() {
-  let checkoutList = JSON.parse(localStorage.getItem('checkoutPage')) || [];
-  let checkoutTable = document.querySelector('.Checkout');
-
-  checkoutTable.innerHTML = ''; // Clear previous items
-
-  checkoutList.forEach((item) => {
-    let row = document.createElement('tr');
-
-    let nameCell = document.createElement('td');
-    nameCell.innerHTML = item.title;
-
-    let quantityCell = document.createElement('td');
-    quantityCell.innerHTML = item.quantity;
-
-    let priceCell = document.createElement('td');
-    priceCell.innerHTML = `$${item.price}`;
-
-    let deleteCell = document.createElement('td');
-    let deleteButton = document.createElement('button');
-    deleteButton.innerHTML = 'Delete';
-    deleteButton.classList.add('btn', 'btn-danger');
-    deleteButton.addEventListener('click', function() {
-      deleteItem(item.id);
-    });
-    deleteCell.appendChild(deleteButton);
-
-    row.appendChild(nameCell);
-    row.appendChild(quantityCell);
-    row.appendChild(priceCell);
-    row.appendChild(deleteCell);
-
-    checkoutTable.appendChild(row);
-  });
-
-  // Display total cost and quantity
-  let totalCost = calculateTotalCost();
-  let totalQuantity = calculateTotalQuantity();
-
-  let totalRow = document.createElement('tr');
-  let totalTitleCell = document.createElement('td');
-  totalTitleCell.innerHTML = 'Total';
-  totalTitleCell.setAttribute('colspan', '2');
-  totalTitleCell.classList.add('font-weight-bold');
-
-  let totalQuantityCell = document.createElement('td');
-  totalQuantityCell.innerHTML = totalQuantity;
-  totalQuantityCell.classList.add('font-weight-bold');
-
-  let totalCostCell = document.createElement('td');
-  totalCostCell.innerHTML = `$${totalCost.toFixed(2)}`;
-  totalCostCell.classList.add('font-weight-bold');
-
-  totalRow.appendChild(totalTitleCell);
-  totalRow.appendChild(totalQuantityCell);
-  totalRow.appendChild(totalCostCell);
-
-  checkoutTable.appendChild(totalRow);
-}
-
-// Call the displayCheckoutItems function to show the checkout items on page load
-displayCheckoutItems();
-
 
 
 // Checkout button

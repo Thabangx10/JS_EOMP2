@@ -79,3 +79,91 @@ function refreshTable() {
 }
 
 displayAdmin();
+
+
+function editProduct(productId) {
+    var product = products.find((p) => p.id === productId);
+    if (product) {
+      var titleInput = document.getElementById("titleInput");
+      var categoryInput = document.getElementById("categoryInput");
+      var priceInput = document.getElementById("priceInput");
+  
+      titleInput.value = product.title;
+      categoryInput.value = product.category;
+      priceInput.value = product.price;
+  
+      // Display save button
+      var saveButton = document.getElementById("saveButton");
+      saveButton.style.display = "inline-block";
+      saveButton.dataset.productId = productId;
+      saveButton.addEventListener("click", saveProductChanges);
+    }
+  }
+  
+  function saveProductChanges(event) {
+    event.preventDefault();
+
+    var productId = parseInt(event.target.dataset.productId);
+    var titleInput = document.getElementById("titleInput");
+    var categoryInput = document.getElementById("categoryInput");
+    var priceInput = document.getElementById("priceInput");
+  
+    var productIndex = products.findIndex((p) => p.id === productId);
+    if (productIndex !== -1) {
+      products[productIndex].title = titleInput.value;
+      products[productIndex].category = categoryInput.value;
+      products[productIndex].price = parseFloat(priceInput.value);
+  
+      updateLocalStorage();
+      refreshTable();
+      clearInputFields();
+    }
+  
+    // Hide save button
+    event.target.style.display = "none";
+
+    var modal = document.getElementById("editModal");
+    var bootstrapModal = bootstrap.Modal.getInstance(modal);
+    bootstrapModal.hide();
+  }
+  
+  function clearInputFields() {
+    var titleInput = document.getElementById("titleInput");
+    var categoryInput = document.getElementById("categoryInput");
+    var priceInput = document.getElementById("priceInput");
+  
+    titleInput.value = "";
+    categoryInput.value = "";
+    priceInput.value = "";
+  }
+
+  function addNewProduct(event) {
+    event.preventDefault();
+  
+    var titleInput = document.getElementById("titleInput");
+    var descriptionInput = document.getElementById("descriptionInput");
+    var priceInput = document.getElementById("priceInput");
+    var imageInput = document.getElementById("imageInput");
+    var categoryInput = document.getElementById("categoryInput");
+  
+    var newProduct = {
+      id: products.length + 1,
+      title: titleInput.value,
+      description: descriptionInput.value,
+      price: parseFloat(priceInput.value),
+      image: imageInput.value,
+      category: categoryInput.value,
+    };
+  
+    products.push(newProduct);
+    updateLocalStorage();
+    refreshTable();
+    clearInputFields();
+  
+    // Hide modal
+    var modal = document.getElementById("addModal");
+    var bootstrapModal = bootstrap.Modal.getInstance(modal);
+    bootstrapModal.hide();
+  }
+  
+  document.getElementById("addForm").addEventListener("submit", addNewProduct);

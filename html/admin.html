@@ -34,7 +34,6 @@
                 <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
                     aria-labelledby="offcanvasDarkNavbarLabel">
                     <div class="offcanvas-header">
-                        <!-- <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5> -->
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
                             aria-label="Close"></button>
                     </div>
@@ -64,53 +63,46 @@
     <header>
         <h1 class="AdminHeading">Admin</h1>
     </header>
-    <button type="button" class="btn btn-dark modalButton me-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Add Products
-    </button>
+    <button type="button" class="btn btn-primary custom-btn" data-bs-toggle="modal" data-bs-target="#addModal">Add Product</button>
 
     <!-- Modal section -->
 
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-2" id="exampleModalLabel">Add Products</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="input-group mb-3">
-                        <span class="input-group-text bg-dark text-white" id="inputGroup-sizing-default">Id</span>
-                        <input type="text" class="form-control" id="id" aria-label="Sizing example input"
-                            aria-describedby="inputGroup-sizing-default">
-                    </div>
-                    <div class="input-group mb-3">
-                        <span class="input-group-text bg-dark text-white" id="inputGroup-sizing-default">Type</span>
-                        <input type="text" class="form-control" id="type" aria-label="Sizing example input"
-                            aria-describedby="inputGroup-sizing-default">
-                    </div>
-                    <div class="input-group mb-3">
-                        <span class="input-group-text bg-dark text-white" id="inputGroup-sizing-default">Name</span>
-                        <input type="text" class="form-control" id="name" aria-label="Sizing example input"
-                            aria-describedby="inputGroup-sizing-default">
-                    </div>
-                    <div class="input-group mb-3">
-                        <span class="input-group-text bg-dark text-white" id="inputGroup-sizing-default">Price</span>
-                        <input type="text" class="form-control" id="price" aria-label="Sizing example input"
-                            aria-describedby="inputGroup-sizing-default">
-                    </div>
-                    <div class="input-group mb-3">
-                        <span class="input-group-text bg-dark text-white" id="inputGroup-sizing-default">Image</span>
-                        <input type="text" class="form-control" id="imageURL" aria-label="Sizing example input"
-                            aria-describedby="inputGroup-sizing-default">
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-dark Add">Add</button>
-                </div>
-            </div>
+<div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="addModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="addModalLabel">Add Product</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+        <div class="modal-body">
+          <form id="addForm">
+            <div class="form-group">
+              <label for="titleInput">Title</label>
+              <input type="text" class="form-control" id="titleInput" placeholder="Enter title">
+            </div>
+            <div class="form-group">
+              <label for="descriptionInput">Description</label>
+              <input type="text" class="form-control" id="descriptionInput" placeholder="Enter description">
+            </div>
+            <div class="form-group">
+              <label for="priceInput">Price</label>
+              <input type="number" class="form-control" id="priceInput" placeholder="Enter price">
+            </div>
+            <div class="form-group">
+              <label for="imageInput">Image URL</label>
+              <input type="text" class="form-control" id="imageInput" placeholder="Enter image URL">
+            </div>
+            <div class="form-group">
+              <label for="categoryInput">Category</label>
+              <input type="text" class="form-control" id="categoryInput" placeholder="Enter category">
+            </div>
+            <button type="submit" class="btn btn-primary">Save</button>
+          </form>
+        </div>
+      </div>
     </div>
+  </div>
+  
 
     <!-- Table section -->
     <div class="table1">
@@ -132,13 +124,36 @@
         </table>
     </div>
 
+    <!-- Edit -->
+
+    <section>
+        <form id="editForm">
+            <div class="form-group">
+              <label for="titleInput">Title</label>
+              <input type="text" class="form-control" id="titleInput" placeholder="Enter title">
+            </div>
+            <div class="form-group">
+              <label for="categoryInput">Category</label>
+              <input type="text" class="form-control" id="categoryInput" placeholder="Enter category">
+            </div>
+            <div class="form-group">
+              <label for="priceInput">Price</label>
+              <input type="number" class="form-control" id="priceInput" placeholder="Enter price">
+            </div>
+            <button type="button" class="btn btn-primary" id="saveButton" style="display: none;">Save</button>
+          </form>
+        </div>
+    </section><br>
+
 
     <!-- Footer -->
-    <footer class="footer container-fluid">
-        <div class="text-center text-black p-3 fs-6">
-            <p>© Copyright 2022. Made by Thabang Kganana</p>
-        </div>
-    </footer>
+    <section>
+        <footer class="footer container-fluid">
+            <div class="text-center text-black p-3 fs-6">
+                <p>© Copyright 2022. Made by Thabang Kganana</p>
+            </div>
+        </footer>
+    </section>
 
     <!-- External JavaScript File -->
 

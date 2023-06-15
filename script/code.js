@@ -102,20 +102,4 @@ function addToCheckout(productId) {
   
   // Call the filterProductsByPrice function to enable filtering by price
   filterProductsByPrice();
-  
 
-  
-  
-
-
-
-// Implement logic for our buttons using functions whilst also creating a checkout button function
-
-
-// Checkout button
-// function checkoutButton(item) {
-//     checkoutItems.push(item);
-//     console.log(checkoutItems);
-//     localStorage.setItem('checkoutPage', JSON.stringify(checkoutItems));
-// }
-// checkoutButton();

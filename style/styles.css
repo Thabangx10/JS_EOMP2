@@ -7,11 +7,45 @@
     text-align: center;
 }
 
+/* .bg-image {
+    background-image: url(https://i.postimg.cc/5NYpnw4H/pexels-dynamic-wang-7582107.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+} */
+
 .logo {
     width: 80px;
     height: 100px;
 }
 
+h1 {
+    text-align: center;
+    padding-top: 5px;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: lighter;
+    font-size: 130px;
+    padding-right: 50px;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.half {
+    color: rgb(192, 188, 188);
+}
+
+.half2 {
+    color: rgba(0, 0, 0, 0.89);
+}
+
+.slogan {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 270px;
+    padding-left: 11px;
+    animation: slideInUp 1s ease-in-out;
+}
 
 .nav-item {
     font-family: 'Frank Ruhl Libre', serif;
@@ -19,36 +53,73 @@
     letter-spacing: 0.2rem;
     text-align: center;
     padding: 20px;
+    transition: all 0.3s ease-in-out;
 }
+
 .nav-item:hover {
     text-decoration: underline;
+    transform: scale(1.1);
 }
 
+/* Welcome */
+.welcome {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.89), rgb(192, 188, 188));
+}
 
+.welcome1 {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 4rem;
+    padding-top: 120px;
+    animation: fadeIn 1s ease-in-out;
+}
 
+.WelcomeMessage {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 2rem;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 30px;
+    padding-bottom: 100px;
+    animation: slideInUp 1s ease-in-out;
+}
+
+/* footer */
 footer {
-    background-color:  rgb(192, 188, 188);
+    background-color: rgb(192, 188, 188);
+    animation: fadeIn 1s ease-in-out;
 }
 
+/* CARD */
+.ArtGallery {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 4rem;
+    animation: fadeInDown 1s ease-in-out;
+}
 
-  .card {
+.card {
     overflow: hidden;
     width: 300px;
     padding: 0;
     margin: auto;
     margin-bottom: 50px;
-  }
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
 
-  img {
+.card:hover {
+    transform: scale(1.05);
+}
+
+img {
     object-fit: cover;
     aspect-ratio: 3/4;
     filter: grayscale(100%);
+    transition: filter 0.3s ease-in-out;
+}
 
-
-  }
-  img:hover {
+img:hover {
     transform: scale(1.1);
-    transition: transform .7s;
+    filter: grayscale(0%);
 }
 
 .price {
@@ -56,74 +127,134 @@ footer {
     font-size: large;
     font-weight: 500;
 }
+
 h5 {
-    font-family: 'Frank Ruhl Libre', serif; 
+    font-family: 'Frank Ruhl Libre', serif;
     font-size: x-large;
     font-weight: 900;
 }
 
+.PurchaseButton {
+    font-family: 'Frank Ruhl Libre', serif;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
 
 .PurchaseButton:hover {
     color: rgb(153, 153, 153);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .dropdown {
     display: inline;
+    transition: all 0.3s ease-in-out;
 }
 
-
+/* Admin Page */
 
 .adminpage {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.89) , rgb(192, 188, 188));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.89), rgb(192, 188, 188));
 }
 
 .AdminHeading {
+    color: white;
     text-align: center;
     padding-top: 20px;
     font-family: 'Cormorant Garamond', serif;
     font-weight: lighter;
     font-size: 80px;
     padding-right: 50px;
+    animation: fadeInDown 1s ease-in-out;
 }
 
 table {
     margin-top: 50px;
+    animation: slideInUp 1s ease-in-out;
 }
 
 th {
     color: white;
     border: solid;
     padding: 15px;
+    transition: background-color 0.3s ease-in-out;
 }
 
+th:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
 
 button {
     border: none;
     background: none;
     padding: 20px;
+    transition: all 0.3s ease-in-out;
 }
-
 
 .fa-solid:hover {
     color: white;
+    transform: rotate(360deg);
 }
 
-
+/* FORM */
 .form-control {
     border: 2px solid black;
-}
-.display-3 {
-    padding-top: 20px;
-}
-input[type="submit"]:hover{
-    cursor:pointer;
-    background: black;
-    color:white;
+    transition: border-color 0.3s ease-in-out;
 }
 
-#screen { 
+.form-control:focus {
+    border-color: rgba(0, 0, 0, 0.5);
+}
+
+.display-3 {
+    padding-top: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    background: black;
+    color: white;
+}
+
+/* CheckOut */
+
+#screen {
     width: 25px;
     background-color: white;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 
